@@ -6,7 +6,29 @@
     font-family: brødFont;
     src: url();
 }
-
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
+}
+
+@media screen and (min-width: 1366px) {
+/* https://www.w3schools.com/howto/howto_css_two_columns.asp
+    2 kollonner ved siden af hinanden
+*/
+    .overviewBox{
+        border: 1px solid black;
+        flex: 50%;
+        height: 50vh;
+    }
+    .overview{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .overview a {
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+    }
 }
