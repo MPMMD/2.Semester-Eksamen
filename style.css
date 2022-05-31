@@ -24,14 +24,16 @@ header{
         border: 1px solid black;
         flex: 50%;
         height: 50vh;
+        background-image: url(imgs/placeholder.png);
+        background-size: cover;
     }
     .overview{
         display: flex;
         flex-wrap: wrap;
+        
     }
     .overview a {
-        width: 100%;
-        height: 100%;
-        background-color: blue;
+        width: 50%;
+        height: 50%;
     }
 }
