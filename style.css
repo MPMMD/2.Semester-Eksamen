@@ -11,15 +11,28 @@
 }
 body{
     margin: 0;
+    color: white;
+    /* placeholder baggrundsfarve */
+    background-color: black;
 }
 header{
     font-family: var(titleFont);
+}
+/* OM HOPSCREEK */
+.medlemmer{
+
+}
+.medlem img{
+    width: 45%;
+    height: 45%;
 }
 
 @media screen and (min-width: 1366px) {
 /* https://www.w3schools.com/howto/howto_css_two_columns.asp
     2 kollonner ved siden af hinanden
 */
+
+/* Landing Page PC */
     .landingpage{
         display: flex;
         flex-wrap: wrap;
