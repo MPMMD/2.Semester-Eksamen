@@ -26,10 +26,13 @@ header{
     font-family: 'titleFont';
 }
 p{
-    font-family: 'brødFont';
+    /* edita book */
+    font-family: edita;
+    font-weight: 500;
 }
 a{
-    font-family: 'brødfont';
+    font-family: edita;
+    font-weight: 500;
     color: var(--brødfont-color);
 }
 /* KONCERTER */
@@ -47,6 +50,12 @@ a{
     background-color: transparent;
     color: var(--brødfont-color);
 }
+.tickets a{
+    font-size: 30pt;
+}
+.tickets p{
+    font-size: 21pt;
+}
 .tickets{
     display: flex;
     flex-direction: column;
@@ -59,7 +68,7 @@ a{
     border: 1px solid white;
     text-align: center;
 }
-.ticket h2,h3,p{
+.ticket h2, .ticket h3,.ticket p{
     margin-left: 0;
 }
 /* https://stackoverflow.com/questions/1269589/css-center-block-but-align-contents-to-the-left
@@ -68,10 +77,18 @@ a{
     display: inline-block;
     text-align: left;
 }
-
 /* OM HOPSCREEK */
-.medlemmer{
-
+.medlem{
+    margin: 4em 37px 4em 37px;
+}
+.medlem img{
+    float: left;
+}
+.medlem-højre{
+    text-align: right;
+}
+.medlem-højre img{
+    float: right;
 }
 .medlem img{
     width: 45%;
