@@ -15,8 +15,27 @@ body{
     /* placeholder baggrundsfarve */
     background-color: black;
 }
+h1,h2,h3,h4,h5,h6,p{
+    margin-left: 37px;
+}
+
 header{
     font-family: var(titleFont);
+}
+p{
+    font-family: var(brødFont);
+}
+/* Koncerter */
+.tickets{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 1em auto 1em auto;
+}
+.ticket{
+    margin-bottom: 2em;
+    justify-content: center;
+    border: 1px solid white;
 }
 /* OM HOPSCREEK */
 .medlemmer{
