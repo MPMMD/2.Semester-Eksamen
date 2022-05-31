@@ -20,19 +20,17 @@ header{
 /* https://www.w3schools.com/howto/howto_css_two_columns.asp
     2 kollonner ved siden af hinanden
 */
-    .overviewBox{
-        border: 1px solid black;
-        flex: 50%;
-        height: 50vh;
-        background-image: url(imgs/placeholder.png);
-        background-size: cover;
-    }
-    .overview{
+    .landingpage{
         display: flex;
         flex-wrap: wrap;
-        
     }
-    .overview a {
+    .landingpage img{
+        width: 100%;
+        height: 50vh;
+        object-fit: fill;
+
+    }
+    .landingpage a {
         width: 50%;
         height: 50%;
     }
