@@ -6,12 +6,15 @@
     font-family: brødFont;
     src: url();
 }
+:root{
+    --brødfont-color: white;
+}
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
-    color: white;
+    color: var(--brødfont-color);
     /* placeholder baggrundsfarve */
     background-color: black;
 }
@@ -20,23 +23,52 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 header{
-    font-family: var(titleFont);
+    font-family: 'titleFont';
 }
 p{
-    font-family: var(brødFont);
+    font-family: 'brødFont';
 }
-/* Koncerter */
+a{
+    font-family: 'brødfont';
+    color: var(--brødfont-color);
+}
+/* KONCERTER */
+.months{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.months button{
+    width: 70px;
+    border-radius: 36px;
+    /* border-color: ; */
+    background-color: transparent;
+    color: var(--brødfont-color);
+}
 .tickets{
     display: flex;
     flex-direction: column;
     width: 90%;
     margin: 1em auto 1em auto;
 }
+
 .ticket{
     margin-bottom: 2em;
-    justify-content: center;
     border: 1px solid white;
+    text-align: center;
 }
+.ticket h2,h3,p{
+    margin-left: 0;
+}
+/* https://stackoverflow.com/questions/1269589/css-center-block-but-align-contents-to-the-left
+    centre text i midten, men med textalign left */
+.tickettext{
+    display: inline-block;
+    text-align: left;
+}
+
 /* OM HOPSCREEK */
 .medlemmer{
 
