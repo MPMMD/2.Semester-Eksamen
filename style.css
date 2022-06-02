@@ -212,7 +212,7 @@ header a {
         -webkit-transition: width .2s ease;
     }
     nav a:hover::after{
-        width: 18%;
+        width:  7em;
         left: 0;
         background: #fff;
     }
@@ -224,18 +224,21 @@ header a {
         color: white;
     }
     .mobileNav-active::after{
-            width: 18%;
+            width: 7em;
             left: 0;
             background: #fff;
     }
     /* Vi er HOPSCREEK */
-    /* .pcOmOs{
-        float: right;
-    } */
+
+    /* Koncerter */
+    .pcKoncerter{
+        margin-top: 3em;
+  display: block;
+        width: 60%;
+    }
     .tickets{
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: flex-start;
     }
     .ticket{
         width: 260px;
