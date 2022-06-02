@@ -1,9 +1,10 @@
 @font-face {
-    font-family: logoFont;
-    src: url();
     font-family: titleFont;
     src: url(fonts/NexaBlack.otf);
-
+}
+@font-face {
+    font-family: altTitleFont;
+    src: url(fonts/NexaBold.otf);
 }
 :root{
     --brødfont-color: white;
@@ -66,13 +67,14 @@ header a {
     flex-direction: row;
     flex: 10%;
 }
+.mobileNav-active{
+    text-decoration: underline;
+}
 /* burgerMenu icon */
 .mobileNav img{
     width: 37px;
     height: 37px;
     margin-right: 37px;
-    /* slet efterfølgende vvv */
-    border: 1px solid white;
     float: left;
     font-size: 12pt;
 }
@@ -104,7 +106,6 @@ header a {
     width: 90%;
     margin: 1em auto 1em auto;
 }
-
 .ticket{
     margin-bottom: 2em;
     border: 1px solid white;
@@ -169,7 +170,6 @@ header a {
 /* https://www.w3schools.com/howto/howto_css_two_columns.asp
     2 kollonner ved siden af hinanden
 */
-
 /* Landing Page PC */
     .landingpage{
         display: flex;
@@ -184,6 +184,49 @@ header a {
     .landingpage a {
         width: 50%;
         height: 50%;
+    }
+    /* Fjerner mobil nav */
+    .burgerMenu img{display: none;}
+    .dropdown{display: flex;}
+    .mobileNav .soMe{display: none;}
+    /* Nav animation https://codepen.io/mehi/pen/MyWqPM
+    underline fra venstre til højre*/
+    /* nav a{font-size: 24px;} */
+    nav{
+        float: left;
+        clear: both;
+        margin-right: 1em;
+    }
+    nav a{
+        color: rgb(105, 105, 105); 
+        transition: 0.3s ease;
+        font-family: altTitleFont !important;
+    }
+    nav a::after{
+        content: '';
+        position: absolute;
+        width: 0; height: 3px;
+        display: block;
+        margin-top: 5px;
+        transition: width .2s ease;
+        -webkit-transition: width .2s ease;
+    }
+    nav a:hover::after{
+        width: 18%;
+        left: 0;
+        background: #fff;
+    }
+    nav a:hover{
+        color: #fff;
+    }
+    .mobileNav-active{
+        font-family: titleFont !important; 
+        color: white;
+    }
+    .mobileNav-active::after{
+            width: 18%;
+            left: 0;
+            background: #fff;
     }
     /* Vi er HOPSCREEK */
     /* .pcOmOs{
@@ -206,6 +249,7 @@ header a {
     .tickettext h3{
         font-size: 28px; 
         margin-bottom: 0;
+        font-family: altTitleFont;
     } 
     .tickettext h2{
         font-size: 42px; 
@@ -218,5 +262,10 @@ header a {
         font-size: 30px;
         display: block;
         text-align: center;
+    }
+    .pcKoncerter header h1{
+        margin-left: 1em;
+        margin-bottom: 0;
+        font-size: 80px;
     }
 }
