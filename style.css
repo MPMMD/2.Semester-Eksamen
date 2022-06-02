@@ -90,6 +90,7 @@ header a {
     /* border-color: ; */
     background-color: transparent;
     color: var(--brødfont-color);
+    border-color: white;
 }
 .tickets a{
     font-size: 30pt;
@@ -111,6 +112,9 @@ header a {
 }
 .ticket h2, .ticket h3,.ticket p{
     margin-left: 0;
+}
+.ticket a {
+    font-weight: 700;
 }
 /* https://stackoverflow.com/questions/1269589/css-center-block-but-align-contents-to-the-left
     centre text i midten, men med textalign left */
@@ -161,7 +165,7 @@ header a {
 }
 
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
 /* https://www.w3schools.com/howto/howto_css_two_columns.asp
     2 kollonner ved siden af hinanden
 */
@@ -180,5 +184,39 @@ header a {
     .landingpage a {
         width: 50%;
         height: 50%;
+    }
+    /* Vi er HOPSCREEK */
+    /* .pcOmOs{
+        float: right;
+    } */
+    .tickets{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    .ticket{
+        width: 260px;
+        height: 260px;
+        margin: 1em;
+    }
+    /* Billet Tekst styling */
+    .tickettext{
+        padding: 1em 0;
+    }
+    .tickettext h3{
+        font-size: 28px; 
+        margin-bottom: 0;
+    } 
+    .tickettext h2{
+        font-size: 42px; 
+        margin: 0;
+    }
+    .tickettext p{
+        font-size: 20px;
+    }
+    .tickettext a{
+        font-size: 30px;
+        display: block;
+        text-align: center;
     }
 }
