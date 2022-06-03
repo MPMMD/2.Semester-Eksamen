@@ -192,17 +192,17 @@ header a {
     /* Nav animation https://codepen.io/mehi/pen/MyWqPM
     underline fra venstre til højre*/
     /* nav a{font-size: 24px;} */
-    nav{
+    .mobileNav{
         float: left;
-        clear: both;
+
         margin-right: 1em;
     }
-    nav a{
+    .mobileNav a{
         color: rgb(105, 105, 105); 
         transition: 0.3s ease;
-        font-family: altTitleFont !important;
+        font-family: altTitleFont;
     }
-    nav a::after{
+    .mobileNav a::after{
         content: '';
         position: absolute;
         width: 0; height: 3px;
@@ -211,38 +211,53 @@ header a {
         transition: width .2s ease;
         -webkit-transition: width .2s ease;
     }
-    nav a:hover::after{
+    .mobileNav a:hover::after{
         width:  7em;
-        left: 0;
         background: #fff;
     }
-    nav a:hover{
+    .mobileNav a:hover{
         color: #fff;
     }
     .mobileNav-active{
-        font-family: titleFont !important; 
-        color: white;
+        font-family: titleFont !important;
+        color: white !important;
     }
     .mobileNav-active::after{
-            width: 7em;
-            left: 0;
+            width: 7em !important;
             background: #fff;
     }
     /* Vi er HOPSCREEK */
-
+    .omOsHeader h1{
+        font-size: 80px;
+        margin-bottom: 0.1em;
+    }
+    .omOsHeader h2{
+        font-size: 36px;
+    }
+    .omOsHeader p, .omOsHeader a{
+        font-size: 20px;
+    }
+    .medlemmer{
+        margin-left: 382.7px;
+    }
     /* Koncerter */
     .pcKoncerter{
-        margin-top: 3em;
-  display: block;
-        width: 60%;
+        float: right;
+        margin-top: 2em;
+        width: 65%;
+    }
+    .months button{
+        width: 110px;
     }
     .tickets{
         flex-direction: row;
         flex-wrap: wrap;
     }
     .ticket{
-        width: 260px;
-        height: 260px;
+        /* width: 260px;
+        height: 260px; */
+        width: 15em;
+        height: 15em;
         margin: 1em;
     }
     /* Billet Tekst styling */
@@ -265,6 +280,11 @@ header a {
         font-size: 30px;
         display: block;
         text-align: center;
+        border: transparent;
+        transition: .3s ease-in;
+    }
+    .tickettext a:hover{
+        border: 1px solid white;
     }
     .pcKoncerter header h1{
         margin-left: 1em;

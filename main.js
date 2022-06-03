@@ -7,10 +7,3 @@
        x.style.display = "block";
      }
    }
-
-   let junibtn = document.querySelector('#juni')
-junibtn.addEventListener('click', function onClick(event){
-  event.target.style.backgroundColor = 'red';
-
-})
-  
