@@ -16,7 +16,7 @@
 body{
     margin: 0;
     color: var(--brødfont-color);
-    /* placeholder baggrundsfarve */
+    background-image: url(imgs/grain.png);
     background-color: black;
 }
 h1,h2,h3,h4,h5,h6,p{
@@ -238,7 +238,14 @@ header a {
         font-size: 20px;
     }
     .medlemmer{
-        margin-left: 382.7px;
+        margin-left: 395.8px;
+    }
+    .medlemmer img{
+        width: 400px;
+        height: auto;
+    }
+    .medlem h2{
+        font-size: 60px;
     }
     /* Koncerter */
     .pcKoncerter{
