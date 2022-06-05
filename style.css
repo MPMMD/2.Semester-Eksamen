@@ -292,6 +292,9 @@ header a {
     /* Nav animation https://codepen.io/mehi/pen/MyWqPM
     underline fra venstre til højre*/
     /* nav a{font-size: 24px;} */
+    .mobileNav #dropdown li{
+        margin-top: 1em;
+    }
     .mobileNav{
         float: left;
         margin-right: 1em;
