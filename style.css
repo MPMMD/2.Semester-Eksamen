@@ -372,26 +372,30 @@ header a {
     /* Koncerter */
     .pcKoncerter{
         float: right;
-        margin-top: 2em;
-        width: 65%;
+        margin-top: 0;
+
+        width: calc(100vw - 385px);
     }
     .months button{
         width: 110px;
+        font-family: titleFont;
+        text-transform: uppercase;
+        padding-top: 0.4em;
+        padding-bottom: 0.3em;
     }
     .tickets{
         flex-direction: row;
         flex-wrap: wrap;
     }
     .ticket{
-        /* width: 260px;
-        height: 260px; */
-        width: 15em;
-        height: 15em;
+        width: 16em;
+        height: 14.5em;
         margin: 1em;
     }
     /* Billet Tekst styling */
     .tickettext{
         padding: 1em 0;
+        text-overflow: hidden;
     }
     .tickettext h3{
         font-size: 28px; 
@@ -401,6 +405,7 @@ header a {
     .tickettext h2{
         font-size: 42px; 
         margin: 0;
+        white-space: nowrap;
     }
     .tickettext p{
         font-size: 20px;
@@ -411,11 +416,13 @@ header a {
         text-align: center;
         border: transparent;
         transition: .3s ease-in;
+        text-decoration: underline;
     }
     .tickettext a:hover{
         border: 1px solid white;
     }
     .pcKoncerter header h1{
+        margin-top: 0.5em;
         margin-left: 1em;
         margin-bottom: 0;
         font-size: 80px;
