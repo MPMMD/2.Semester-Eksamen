@@ -77,7 +77,7 @@ header a {
     font-family: titleFont;
     text-decoration: none;
 }
-.mobileNav .soMe{
+.mobileNav .soMe a{
     display: flex;
     flex-direction: row;
     flex: 10%;
@@ -288,7 +288,7 @@ header a {
     /* Fjerner mobil nav */
     .burgerMenu img{display: none;}
     .dropdown{display: flex;}
-    .mobileNav .soMe{display: none;}
+    /* .mobileNav .soMe{display: none;} */
     /* Nav animation https://codepen.io/mehi/pen/MyWqPM
     underline fra venstre til højre*/
     /* nav a{font-size: 24px;} */
@@ -319,6 +319,10 @@ header a {
     }
     .mobileNav a:hover{
         color: #fff;
+    }
+    /* Fjerner Hover on SoMe effekten */
+    .mobileNav .soMe a::after{
+        width: 0;
     }
     .mobileNav-active{
         font-family: titleFont !important;
