@@ -49,6 +49,7 @@ header a {
 /* Burger Menu */
 .mobileNav{
     font-size: 23pt;
+    z-index: 2;
 }
 .mobileNav .burgerMenu img{
     margin-top: 0.5em;
@@ -369,7 +370,7 @@ header a {
         width: 100%;
     }
     /* Vi er HOPSCREEK */
-    .omOsHeader{position: relative;}
+    .omOsHeader{position: relative; z-index: -1;}
     .omOsHeader img{
         display: block; 
         position: absolute;
