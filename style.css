@@ -77,10 +77,15 @@ header a {
     font-family: titleFont;
     text-decoration: none;
 }
-.mobileNav .soMe a{
+.mobileNav .soMe{
     display: flex;
     flex-direction: row;
-    flex: 10%;
+}
+.mobileNav .soMe a{
+    display: block;
+}
+.mobileNav .soMe li{
+    width: 10px;
 }
 .mobileNav-active{
     text-decoration: underline;
@@ -124,7 +129,6 @@ header a {
     position: relative;
 }
 .musicLinks ul{
-    /* text-align: center; */
     padding: 0;
     width: 100%;
     margin-left: auto;
@@ -151,7 +155,6 @@ header a {
     text-align: right;
     width: 40px;
     height: 40px;
-    /* border: #fff 1px solid; */
     /* transform:translateY(50%); */
     margin-left: 1em;
 }
@@ -167,7 +170,6 @@ header a {
 .months button{
     width: 70px;
     border-radius: 36px;
-    /* border-color: ; */
     background-color: transparent;
     color: var(--brødfont-color);
     border-color: white;
@@ -202,6 +204,7 @@ header a {
     text-align: left;
 }
 /* OM HOPSCREEK */
+.omOsHeader img{display: none;}
 .omOsHeader h2{
     font-family: edita;
     font-weight: 500;
@@ -263,7 +266,7 @@ header a {
 }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
     h1{
         margin-top: 0px;
     }
@@ -366,6 +369,27 @@ header a {
         width: 100%;
     }
     /* Vi er HOPSCREEK */
+    .omOsHeader{position: relative;}
+    .omOsHeader img{
+        display: block; 
+        position: absolute;
+    }
+    .omOsHeader div{
+        display: block;
+        margin-left: calc(30% + 5vw);
+        margin-right: 30%;
+    }
+    #blurGruppe{
+        left: 19%;
+        z-index: -1;
+        width: 18vw;
+    }
+    #elevatorGruppe{
+        top: 5em;
+        right: 100px;
+        width: 25vw;
+        z-index: -1;
+    }
     .omOsHeader h1{
         font-size: 80px;
         margin-bottom: 0.1em;
@@ -379,9 +403,10 @@ header a {
     .omOsHeader a{
         text-decoration: underline;
     }
+    .omOsHeader p {text-align: left;}
     .medlemmer{
         position: relative;
-        height: 150vh;
+        height: 140vh;
         margin-left: 4%;
         margin-right: 4%;
     }
@@ -411,22 +436,22 @@ header a {
     }
     .medlemTextWrapperBuch{
         right: 12em;
-        top: -2em;
+        top: 0;
         z-index: 1;
     }
     .medlem-fred{
         position: relative;
-        top: 10%;
+        top: -13em;
         left: 15%;
     }
     .medlemTextWrapperFred{
-        top: -3em;
+        top: 14em;
         left: -2em;
         z-index: 1;
     }
     .medlem-lyng{
         position: relative;
-        top: 6em;
+        top: 8em;
         right: 12em;
     }
     .medlemTextWrapperLyng{
@@ -435,17 +460,17 @@ header a {
         z-index: 1;
     }
     .medlem-pham{
-        position: relative;
-        top: 15em;
+        /* position: relative; */
+        top: -10em;
         left: 5em;
     }
     .medlemTextWrapperPham{
-        top: 20em;
+        top: 40em;
         z-index: 1;
     }
     .medlem-støv{
         position: relative;
-        top: 16em;
+        top: 20em;
         right: 4em;
     }
     .medlemTextWrapperStøv{
@@ -516,20 +541,17 @@ header a {
     .medlem h2{font-size: 50px !important;}
     .medlem img{width: 400px;}
     .medlemTextWrapperStøv{top: 45em}
+    .medlemTextWrapperFred{top: 17em;}
+    .medlemTextWrapperBuch{top: -1em;}
 }
 
 @media screen and (min-width: 1600px){
         .medlem img{width: 520px;}
+        .medlem-buch{top: 5em;}
+        .medlem-fred{top: -4em;}
         .medlemTextWrapperBuch{
             right: 20em;
             top: -2em;
-        }
-        .medlem-fred{
-            top: 10%;
-            left: 15%;
-        }
-        .medlemTextWrapperFred{
-            top: -4em;
         }
         .medlem-lyng{
             top: 6em;
@@ -539,13 +561,9 @@ header a {
             top: 32em;
             right: -2em;
         }
-        .medlem-pham{
-            top: 15em;
-            left: 5em;
-        }
+        .medlem-pham{top: -2em;}
         .medlemTextWrapperPham{
-            top: 32em;
-            left: 4em;
+            top: 53em;
         }
         .medlem-støv{
             top: 16em;
@@ -554,5 +572,11 @@ header a {
         .medlemTextWrapperStøv{
             top: 64em;
             right: -10em;
+    }
+    #blurGruppe{
+        width: 20vw;
+    }
+    .omOsHeader div{
+        margin-left: 40%;
     }
 }
