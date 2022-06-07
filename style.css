@@ -283,22 +283,70 @@ footer img{
     text-decoration: underline;
 }
 /* Individuelle Medlems Sider */
-    .bio h3{
-        margin-bottom: 0;
-        font-size: 24px;
-    }
-    .bio h4{
-        margin-top: 0;
-        margin-bottom: 0.5em;
-        margin-left: 37px;
-        font-family: edita;
-        font-style: italic;
-        font-size: 36px;
-    }
-    .andre h2{
-        margin-top: 3em;
-        margin-bottom: -1em;
-    }
+.omOsHeaderMedlem img{
+    display: block;
+    width: 100vw;
+}
+.omOsHeaderMedlem{
+    margin-bottom: 2em;
+}
+.medlemsTitle{
+    height: 70px !important;
+    width: 360px !important;
+}
+.bio{
+    position: relative;
+}
+.bio h3{
+    margin-bottom: 0;
+    font-size: 24px;
+}
+.bio h4{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    margin-left: 37px;
+    font-family: edita;
+    font-style: italic;
+    font-size: 36px;
+}
+.bio img{
+    opacity: 0.5;
+    z-index: -1;
+}
+.andre{display: none;}
+.pcAndre h2{
+    margin-top: 3em;
+    margin-left: 0;
+}
+.andre h2{
+    margin-top: 5em;
+}
+.andre img{
+    width: 200px;
+    height: auto;
+}
+.andre a:nth-child(even){
+    float: right;
+    clear: both
+}
+/* Fred Paa Jord Collage */
+.fredCollage1{
+    position: absolute;
+    bottom: -3em;
+    width: 180px;
+}
+.fredCollage2{
+    display: none;
+    position: absolute;
+    width: 180px;
+}
+.fredCollage3{
+    top: 50%;
+    transform: translateY(-25%);
+    right: 0;
+    position: absolute;
+    width: 180px;
+}
 
 @media screen and (min-width: 1050px) {
     footer{
@@ -329,7 +377,7 @@ footer img{
     }
     /* Fjerner mobil nav */
     .burgerMenu img{display: none;}
-    .dropdown{display: flex;}
+    #dropdown{display: block !important;}
     .mobileNav .soMe{display: flex;}
     /* Nav animation https://codepen.io/mehi/pen/MyWqPM
     underline fra venstre til højre*/
@@ -577,7 +625,71 @@ footer img{
         margin-bottom: 0;
         font-size: 80px;
     }
-
+    /* Individuelle Medlems side */
+    .andre{display: block;}
+    .pcAndre{display: none;}
+    .omOsHeaderMedlem img{
+        display: block;
+        position: relative;
+        left: -1em;
+        width: auto;
+    }
+    .introCollage{
+        width: 60% !important;
+    }
+    .bio{
+        margin-left: 395px;
+        width: 30vw;
+    }
+    .bio img{
+        opacity: 0.7;
+    }
+    .bio h3{
+        margin-top: 3em;
+        font-size: 36px;
+    }
+    .bio h4{
+        font-size: 60px;
+        white-space: nowrap;
+    }
+    .andre img{
+        width: 30vw;
+    }
+    .andre h2{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 1em;
+    }
+    .andre img:hover{
+        opacity: 0.7;
+    }
+    .andre div a:nth-child(even){
+        float: none;
+    }
+    .andre div{
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Fred Paa Jord Collage */
+    .fredCollage1{
+        top: -2em;
+        transform: translateX(-50%);
+        width: 325px;
+    }
+    .fredCollage2{
+        display: block;
+        width: 500px;
+        top: 50%;
+        right: -40vw;
+        transform: translateY(-50%);
+    }
+    .fredCollage3{
+        top: 100%;
+        transform: translate(-65%, -50%);
+        width: 275px;
+    }
 }
 @media screen and (min-width: 1366px) {
     .medlem h2{font-size: 50px !important;}
@@ -588,33 +700,40 @@ footer img{
 }
 
 @media screen and (min-width: 1600px){
-        .medlem img{width: 520px;}
-        .medlem-buch{top: 5em;}
-        .medlem-fred{top: -4em;}
-        .medlemTextWrapperBuch{
-            right: 20em;
-            top: -2em;
+    .medlem img{width: 520px;}
+    .medlem-buch{top: 5em;}
+    .medlem-fred{top: -4em;}
+    .medlemTextWrapperBuch{
+        right: 20em;
+        top: -2em;
         }
-        .medlem-lyng{
-            top: 6em;
-            right: 12em;
-        }
-        .medlemTextWrapperLyng{
-            top: 32em;
-            right: -2em;
-        }
-        .medlem-pham{top: -2em;}
-        .medlemTextWrapperPham{
-            top: 53em;
-        }
-        .medlem-støv{
-            top: 16em;
-            right: 35em;
-        }
-        .medlemTextWrapperStøv{
-            top: 64em;
-            right: -10em;
+    .medlem-lyng{
+        top: 6em;
+        right: 12em;
     }
+    .medlemTextWrapperLyng{
+        top: 32em;
+        right: -2em;
+    }
+    .medlem-pham{top: -2em;}
+    .medlemTextWrapperPham{
+        top: 53em;
+    }
+    .medlem-støv{
+        top: 16em;
+        right: 35em;
+    }
+    .medlemTextWrapperStøv{
+        top: 64em;
+        right: -10em;
+    }
+    /* .fredCollage2{
+        display: block;
+        width: 500px;
+        top: 50%;
+        right: -40vw;
+        transform: translateY(-50%);
+    } */
     #blurGruppe{
         width: 20vw;
     }
