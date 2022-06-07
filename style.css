@@ -347,6 +347,23 @@ footer img{
     position: absolute;
     width: 180px;
 }
+/* Lyng Collage */
+.lyngCollage1{
+    position: absolute;
+    bottom: -3em;
+    width: 300px;
+}
+.lyngCollage2{
+    display: none;
+    position: absolute;
+    width: 180px;
+}
+/* fejl Collage */
+.fejlCollage1{
+    position: absolute;
+    bottom: -3em;
+    width: 300px;
+}
 
 @media screen and (min-width: 1050px) {
     footer{
@@ -637,9 +654,13 @@ footer img{
     .introCollage{
         width: 60% !important;
     }
+    
+
     .bio{
-        margin-left: 395px;
-        width: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 20vw;
     }
     .bio img{
         opacity: 0.7;
@@ -682,14 +703,40 @@ footer img{
         display: block;
         width: 500px;
         top: 50%;
-        right: -40vw;
+        right: -25vw;
         transform: translateY(-50%);
     }
     .fredCollage3{
         top: 100%;
-        transform: translate(-65%, -50%);
+        transform: translate(-150%, -50%);
         width: 275px;
     }
+
+        /* Lyng Collage */
+    .lyngCollage1{
+        top: -2em;
+        transform: translateX(-85%);
+        width: 525px;
+        position: absolute;
+
+    }
+    .lyngCollage2{
+        display: block;
+        width: 500px;
+        top: 50%;
+        right: -25vw;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    /* fejl Collage */
+    .fejlCollage1{
+        position: absolute;
+        top: 10%;
+        left: -21em;
+        width: 400px;
+        
+        
+}
 }
 @media screen and (min-width: 1366px) {
     .medlem h2{font-size: 50px !important;}
