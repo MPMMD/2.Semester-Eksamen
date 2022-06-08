@@ -78,6 +78,7 @@ footer img{
 .mobileNav{
     font-size: 23pt;
     z-index: 2;
+    text-transform: uppercase;
 }
 .mobileNav .burgerMenu img{
     margin-top: 0.5em;
@@ -156,6 +157,7 @@ footer img{
     display: flex;
     margin: 1em;
     position: relative;
+    text-transform: uppercase;
 }
 .musicLinks ul{
     padding: 0;
@@ -202,6 +204,11 @@ footer img{
     background-color: transparent;
     color: var(--brødfont-color);
     border-color: white;
+    text-transform: uppercase;
+    padding-top: 0.4em;
+    padding-bottom: 0.3em;
+    font-family: titleFont;
+    margin-bottom: 1em;
 }
 .tickets a{
     font-size: 30pt;
@@ -223,6 +230,9 @@ footer img{
 .ticket h2, .ticket h3,.ticket p{
     margin-left: 0;
 }
+.ticket h3{
+    margin-top: 1em;
+}
 .ticket a {
     font-weight: 700;
 }
@@ -231,6 +241,9 @@ footer img{
 .tickettext{
     display: inline-block;
     text-align: left;
+}
+.tickettext a{
+    text-decoration: underline;
 }
 /* OM HOPSCREEK */
 .omOsHeader img{display: none;}
@@ -503,8 +516,15 @@ footer img{
         margin-left: min(10%,395px);
         margin-right: min(10%,395px);
     }
+    .newMusic iframe{
+        height: 700px;
+    }
     .newMusic h2, .newMusic h3{
         font-size: 50px;
+    }
+    .newMusic h2{
+        margin-left: 0;
+        position: absolute;
     }
     .newMusic p{font-size: 28px;}
     .moreMusic{
@@ -658,19 +678,16 @@ footer img{
     .pcKoncerter{
         float: right;
         margin-top: 0;
-
-        width: calc(100vw - 385px);
+        width: calc(100vw - 425px);
     }
     .months button{
         width: 110px;
-        font-family: titleFont;
-        text-transform: uppercase;
-        padding-top: 0.4em;
-        padding-bottom: 0.3em;
     }
     .tickets{
         flex-direction: row;
         flex-wrap: wrap;
+        margin-right: 0;
+        margin-left: 0;
     }
     .ticket{
         width: 16em;
@@ -701,7 +718,6 @@ footer img{
         text-align: center;
         border: transparent;
         transition: .3s ease-in;
-        text-decoration: underline;
     }
     .tickettext a:hover{
         border: 1px solid white;
