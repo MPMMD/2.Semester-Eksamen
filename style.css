@@ -23,6 +23,7 @@ body{
     background-image: url(imgs/grain.png);
     background-color: black;
 }
+
 h1,h2,h3{
     margin-left: 37px;
     margin-top: 0;
@@ -394,6 +395,21 @@ footer img{
     width: 60vw;
     bottom: 15%;
 }
+
+ .buchCollage1{
+    position: absolute;
+    width: 45vw;
+    top: 0%;
+    left: 0.5rem;
+}
+.buchCollage2{
+    position: absolute;
+    right: 0;
+    width: 13rem;
+    bottom: 12rem;
+}
+
+
 @media screen and (min-width: 1050px) {
     .soMeLinks-forside{
         display: none;
@@ -523,6 +539,30 @@ footer img{
         right: 100px;
         width: 25vw;
         z-index: -1;
+    }
+    #gruppebillede {
+        position: absolute;
+        width: 300px;
+        left: 1450px;
+        top: 1650px;
+    }
+    #gruppebillede2 {
+        position: absolute;
+        width: 400px;
+        left: 200px;
+        top: 1100px;
+    }
+    #gruppebillede3 {
+        position: absolute;
+        width: 400px;
+        left: 950px;
+        top: 800px;
+    }
+    #gruppebillede4 {
+        position: absolute;
+        width: 500px;
+        left: 800px;
+        top: 1300px;
     }
     .omOsHeader h1{
         font-size: 80px;
@@ -780,6 +820,19 @@ footer img{
         left: -50%;
         width: 70%;
     }
+
+    .buchCollage1{
+        position: absolute;
+        left: -10rem;
+        top: -1em;
+        width: 400px;
+    }
+    .buchCollage2{
+        position: absolute;
+        left: 10em;
+        bottom: 10em;
+        width: 35rem;
+    }
 }
 @media screen and (min-width: 1366px) {
     .soMeKoncerter{display: none;}
@@ -845,4 +898,18 @@ footer img{
         opacity: 1 !important;
         filter:saturate(0.5);
     }
+
+    .buchCollage1{
+        position: absolute;
+        left: -10rem;
+        top: -1em;
+        width: 400px;
+    }
+    .buchCollage2{
+        position: absolute;
+        left: 10em;
+        bottom: 1em;
+        width: 50rem;
+    }
+
 }
