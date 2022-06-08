@@ -391,6 +391,21 @@ footer img{
     width: 60vw;
     bottom: 15%;
 }
+
+ .buchCollage1{
+    position: absolute;
+    width: 20vw;
+    top: 0%;
+    right: 0;
+}
+.buchCollage2{
+    position: absolute;
+    left: 0;
+    width: 60vw;
+    bottom: 15%;
+}
+
+
 @media screen and (min-width: 1050px) {
     .soMeLinks-forside{
         display: none;
@@ -776,6 +791,19 @@ footer img{
     .phamCollage3{
         left: -50%;
         width: 70%;
+    }
+
+    .buchCollage1{
+        position: absolute;
+        right: 10em;
+        top: -1em;
+        width: 400px;
+    }
+    .buchCollage2{
+        position: absolute;
+        left: 10em;
+        bottom: 10em;
+        width: 35rem;
     }
 }
 @media screen and (min-width: 1366px) {
