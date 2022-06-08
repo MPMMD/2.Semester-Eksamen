@@ -394,15 +394,15 @@ footer img{
 
  .buchCollage1{
     position: absolute;
-    width: 20vw;
+    width: 45vw;
     top: 0%;
-    right: 0;
+    left: 0.5rem;
 }
 .buchCollage2{
     position: absolute;
-    left: 0;
-    width: 60vw;
-    bottom: 15%;
+    right: 0;
+    width: 13rem;
+    bottom: 12rem;
 }
 
 
@@ -795,7 +795,7 @@ footer img{
 
     .buchCollage1{
         position: absolute;
-        right: 10em;
+        left: -10rem;
         top: -1em;
         width: 400px;
     }
@@ -870,4 +870,18 @@ footer img{
         opacity: 1 !important;
         filter:saturate(0.5);
     }
+
+    .buchCollage1{
+        position: absolute;
+        left: -10rem;
+        top: -1em;
+        width: 400px;
+    }
+    .buchCollage2{
+        position: absolute;
+        left: 10em;
+        bottom: 1em;
+        width: 50rem;
+    }
+
 }
