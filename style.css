@@ -855,7 +855,7 @@ footer img{
     }
 }
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1530px){
     .bio{width: 20vw;}
     .medlem img{width: 520px;}
     .medlem-buch{top: 5em;}
