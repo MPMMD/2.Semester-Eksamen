@@ -76,7 +76,7 @@ footer img{
 }
 /* Burger Menu */
 .mobileNav{
-    font-size: 23pt;
+    font-size: 20pt;
     z-index: 2;
     text-transform: uppercase;
 }
@@ -715,8 +715,6 @@ footer img{
     .tickets{
         flex-direction: row;
         flex-wrap: wrap;
-        margin-right: 0;
-        margin-left: 0;
     }
     .ticket{
         width: 16em;
@@ -726,7 +724,6 @@ footer img{
     /* Billet Tekst styling */
     .tickettext{
         padding: 1em 0;
-        text-overflow: hidden;
     }
     .tickettext h3{
         font-size: 28px; 
